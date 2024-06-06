@@ -14,4 +14,17 @@ Este repositorio contiene todos los recursos y archivos necesarios para la ejecu
 pdflatex main.tex
 bibtex main
 pdflatex main.tex
-pdflatex main.tex
+pdflatex main.tex´´´
+```
+
+## Contribuciones
+Ver CONTRIBUTING.md para detalles sobre cómo contribuir al proyecto.
+
+## Licencia
+Este proyecto está bajo la Licencia MIT. 
+Ver LICENSE.md para más detalles.
+
+## Contacto
+**Alumno**: Abel González Vázquez  
+**Email**: [abel.gonzalez@udc.es](mailto:abel.gonzalez@udc.es)  
+**Tutor Académico**: Pablo Alejandro Calviño Padín  
