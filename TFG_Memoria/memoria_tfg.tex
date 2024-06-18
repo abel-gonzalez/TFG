@@ -1,0 +1,122 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Preámbulo                                                                    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt,a4paper,titlepage,oneside]{report}
+
+%%% RELACIÓN DE VARIABLES A PERSONALIZAR %%%
+%\def\lingua{gal}
+\def\lingua{esp} % descomenta esta liña se redactarás a memoria en español
+%\def\lingua{eng} % descomenta esta liña se redactarás a memoria en inglés
+\def\nome{Abel González Vázquez}                             % substitúe aquí o teu nome
+\def\nomedirectorA{Pablo Alejandro Calviño Padín}              % substitúe aquí o nome de quen dirixe
+
+
+\def\titulo{Investigación sobre la eficiencia en la generación automática de código utilizando modelos de lenguaje masivos.} % substitúe aquí o título do teu TFG
+\def\titulacion{gei}
+\def\mencion{TECNOLOXÍAS DA INFORMACIÓN}
+
+\def\renomearcadros{si} % descomenta esta liña se redactas a memoria en español e prefires que
+                         % os "cuadros" e o "índice de cuadros" se renomeen
+                         % a "tablas" e "índice de tablas" respectivamente
+
+\usepackage{estilo_tfg}
+
+% Lista de paquetes potencialmente interesantes (uso baixo demanda)
+
+
+% \usepackage{alltt}       % proporciona o entorno alltt, semellante a verbatim pero que respecta comandos
+% \usepackage{enumitem}    % permite personalizar os entornos de lista
+% \usepackage{eurofont}    % proporciona o comando \euro
+% \usepackage{float}       % permite máis opcións para controlar obxectos flotantes (táboas, figuras)
+% \usepackage{hhline}      % permite personalizar as liñas horizontais en arrays e táboas
+%  \usepackage{longtable}   % permite construir táboas que ocupan máis dunha páxina
+% \usepackage{lscape}      % permite colocar partes do documento en orientación apaisada
+% \usepackage{moreverb}    % permite personalizar o entorno verbatim
+% \usepackage{multirow}    % permite crear celdas que ocupan varias filas da mesma táboa
+% \usepackage{pdfpages}    % permite insertar ficheiros en PDF no documento
+% \usepackage{rotating}    % permite diferentes tipos de rotacións para figuras e táboas
+% \usepackage{subcaption}  % permite a inclusión de varias subfiguras nunha figura
+% \usepackage{tabu}        % permite táboas flexibles
+% \usepackage{tabularx}    % permite táboas con columnas de anchura determinada
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Corpo                                                                        %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ % Preliminares do documento            %
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ \include{portada/portada}
+ \dedicatoria{A mis abuelos} % escribe neste comando o teu texto de dedicatoria
+
+\newpage % Esto crea una nueva página
+\thispagestyle{empty} % Elimina encabezados y pies de página en esta página
+
+\vspace*{\fill} % Añade espacio vertical antes del título para centrarlo verticalmente
+\begin{center} % Comienza el entorno de centrado
+\textbf{Agradecimientos} % Aplica negrita al título
+
+\vspace{1em} % Añade un poco de espacio entre el título y el texto para separar visualmente
+
+A mi familia, por su amor inquebrantable y su constante ánimo; a mis amigos, por su
+compañerismo y motivación; y a mis profesores, por su guía experta y sus valiosos consejos.
+Cada uno de ustedes ha sido fundamental para llevar a cabo este proyecto.
+\end{center} % Cierra el entorno de centrado
+\vspace*{\fill} % Añade espacio vertical después del texto para centrarlo verticalmente
+\newpage % Opcional: Comienza una nueva página después de los agradecimientos si lo deseas
+
+
+ \include{portada/resumo}
+
+ \pagenumbering{roman}
+ \setcounter{page}{1}
+ \bstctlcite{IEEEexample:BSTcontrol}
+
+
+% Cambiar el nombre del pie de listado
+\renewcommand{\lstlistingname}{Listado}
+
+ \tableofcontents
+ \listoffigures
+ \listoftables
+ \lstlistoflistings  % Índice de listados
+ \clearpage
+ 
+ \pagenumbering{arabic}
+ \setcounter{page}{1}
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ % Capítulos                            %
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ \include{contido/introduccion}
+ \include{contido/estadodelarte}
+ \include{contido/conceptos}
+ \include{contido/planificacion}
+ \include{contido/tecnologias}
+ \include{contido/desarrollo}
+ \include{contido/etica}
+ \include{contido/conclusions}
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ % Apéndices, glosarios e bibliografía  %
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ \appendix
+ \appendixpage
+ \include{anexos/estandares}
+%\include{anexos/...}
+
+ \printglossary[type=\acronymtype,title=\nomeglosarioacronimos]
+ \printglossary[title=\nomeglosariotermos]
+
+ \bibliographystyle{IEEEtranN}
+ \bibliography{\bibconfig,bibliografia/bibliografia}
+ \clearpage
+ 
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

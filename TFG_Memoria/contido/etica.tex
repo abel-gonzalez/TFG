@@ -1,0 +1,45 @@
+\chapter{Seguridad, Ética y Aspectos Legales}
+\label{chap:etica}
+
+\lettrine{E}{}n el campo de la generación automática de código mediante modelos de lenguaje masivos, emergen preocupaciones importantes que van más allá del rendimiento técnico y abarcan aspectos de seguridad, ética y cumplimiento legal.
+
+En este capítulo, se examinan detalladamente los temas esenciales, proporcionando un análisis exhaustivo sobre las consideraciones de seguridad necesarias para proteger sistemas y datos, así como los dilemas éticos relacionados con el uso de la inteligencia artificial y las regulaciones legales que rigen estas tecnologías avanzadas.
+
+El propósito es orientar el desarrollo y la implementación de herramientas de generación de código que sean no solo efectivas, sino también responsables y seguras.
+
+
+\section{Consideraciones de Seguridad}
+
+La implementación de modelos de lenguaje masivos en la generación de código conlleva desafíos de seguridad que exigen una gestión meticulosa para prevenir errores y ataques que comprometan la integridad del software y los datos.
+
+\begin{itemize}
+    \item \textbf{Seguridad del Software Generado}: La calidad del código generado por los modelos de lenguaje puede variar, y sin la supervisión adecuada, algunos pueden introducir vulnerabilidades. Es crucial implementar revisiones de código y pruebas automatizadas para identificar y mitigar posibles riesgos de seguridad en el código producido.
+    
+    \item \textbf{Seguridad de Datos}: Los datos utilizados y generados por los modelos de lenguaje deben estar protegidos contra accesos no autorizados y manipulaciones. Implementar cifrado de datos y asegurar canales de comunicación son pasos esenciales para proteger la información sensible.
+    
+    \item \textbf{Robustez del Modelo}: Es vital asegurar que los modelos sean resistentes a ataques adversarios, especialmente en entornos donde actores maliciosos pueden intentar inducir respuestas erróneas o manipular el comportamiento del modelo. Técnicas como el \gls{adversaltraining} pueden mejorar la robustez de los modelos frente a tales ataques.
+\end{itemize}
+
+\section{Aspectos Éticos y de Privacidad}
+
+El uso de modelos de lenguaje masivos para la generación de código también plantea importantes cuestiones éticas y de privacidad que deben ser consideradas para mantener la confianza y la aceptación del usuario.
+
+\begin{itemize}
+    \item \textbf{Transparencia}: Es crucial que tanto desarrolladores como usuarios entiendan el proceso mediante el cual los modelos generan código, permitiéndoles tomar decisiones informadas. Esto requiere que las operaciones y decisiones del modelo se expliquen de forma que sean accesibles y claras para los humanos.
+
+    \item \textbf{Privacidad}: Es fundamental asegurar que los datos personales solo se utilicen con el consentimiento explícito de los individuos, particularmente en contextos donde se manejan grandes volúmenes de datos para el entrenamiento de modelos. Debe existir un marco de políticas de privacidad bien definidas, alineadas con normativas vigentes como el \acrshort{GDPR}\cite{GDPR2023}.
+\end{itemize}
+
+
+\section{Cumplimiento Legal y Normativo}
+
+Los avances en la generación automática de código también deben cumplir con un marco legal y normativo que garantice que la implementación de estas tecnologías se lleve a cabo de manera ética y conforme a la ley.
+
+\begin{itemize}
+    \item \textbf{Cumplimiento de \acrshort{GDPR}}: Los modelos de lenguaje utilizados para la generación automática de código deben cumplir con el \acrshort{GDPR}, asegurando la protección adecuada de los datos personales durante el procesamiento. Esto implica adoptar medidas técnicas y organizativas para garantizar la privacidad y seguridad de la información personal utilizada a lo largo de todo el proceso de generación de código.
+    
+    \item \textbf{Propiedad Intelectual}: La generación de código plantea preguntas sobre la propiedad del código generado y su originalidad. Las empresas y desarrolladores deben navegar por las leyes de derechos de autor para evitar infracciones.
+    
+    \item \textbf{Estándares y Certificaciones}: El cumplimiento de estándares internacionales y la obtención de certificaciones pertinentes son cruciales para validar la seguridad y fiabilidad de las soluciones de generación de código. Esto facilita su adopción en sectores regulados. Se pueden encontrar ejemplos detallados en el Apéndice \ref{chap:estandares}.
+
+\end{itemize}

@@ -1,0 +1,45 @@
+\chapter{Tecnologías utilizadas}
+\label{chap:tecnologías}
+
+\lettrine{E}{}n este capítulo se describen las tecnologías empleadas para la realización del \acrshort{TFG}, tanto el equipo informático como el software.
+
+
+\section{Equipo informático}
+\label{sec:mostra}
+
+El proyecto se ha realizado con un portátil Dell Latitude 5410 con las siguientes características:
+
+\begin{itemize}
+    \item \acrfull{CPU}: Intel(R) Core(TM) i5-10310U CPU @ 1.70GHz, 2208 Mhz
+    \item \acrfull{GPU}: Intel(R) UHD Graphics con 7992 MB de memoria DDR4
+    \item \acrfull{RAM} 16GB de memoria DDR4
+    \item Almacenamiento: PM991 NVMe Samsung 256GB de memoria \acrfull{SSD}
+    \item \acrfull{SO}: Windows 10 Enterprise
+\end{itemize}
+
+\section{Software}
+\label{sec:mostra}
+
+\begin{itemize}
+    \item El editor de código fuente elegido ha sido \textbf{Visual Studio Code} \cite{VSC}. Es un editor de código fuente desarrollado por Microsoft, disponible de manera gratuita y con código abierto.
+    \item Hemos empleado como entorno virtual \textbf{Google Colab} \cite{GoogleColab}. Es un servicio alojado de Jupyter Notebook que no requiere configuración y que ofrece acceso gratuito a recursos de computación, como GPUs y TPUs.
+    \item El lenguaje de programación elegido ha sido \textbf{Python 3.11.5} \cite{Python}, siendo este un lenguaje de programación interpretado, orientado a objetos, de alto nivel y con semántica dinámica.
+    \item Para el manejo de ficheros parquet hemos empleado la herramienta \textbf{ParquetViewer}  para trabajar con archivos parquet \cite{GobiernoEspana_Parquet} debido a su facilidad y rapidez en la manipulación de dichos archivos. Esto ocurre debido al almacenamiento de datos en formato columnar, lo que permite la compresión y la eliminación de datos duplicados. Mejorando de esta manera el desempeño en la escritura y lectura, además de la capacidad de análisis.
+    \item Como herramienta para probar los \acrlong{LLMs} entrenados hemos usado \textbf{LM Studio} \cite{LMStudio}.
+    \item \textbf{Chroma DB} \cite{Chroma} es una base de datos vectorial de código abierto diseñada específicamente para aplicaciones con los \acrfull{LLMs}.
+    \item Como conjunto de datos hemos optado por \textbf{The Vault} \cite{TheVault}. Es un \textit{dataset} con diferentes problemas de programación y sus posibles soluciones en diferentes lenguajes, en nuestro caso solamente usaremos aquellos realizados en Python.
+    \item Hemos empleado diferentes \acrshort{API}s para tener acceso a los diferentes modelos, como fueron las de \textbf{OpenAI} \cite{APIOpenApi}y \textbf{Hugging Face} \cite{HuggingFace}, la cual es una plataforma que proporciona modelos preentrenados y herramientas para el \acrlong{NLP}, facilitando el acceso y la implementación de tecnologías avanzadas de \acrshort{AI}. Además, para trabajar con \textit{embeddings}, utilizamos el \acrshort{API} de \textbf{Nomic} \cite{Nomic}, especializado en su creación, visualización, y análisis de datos.    
+    \item Para la instalación de las siguientes librerías hemos utilizado \textbf{pip 24.0} \cite{Pip}.
+    \item Librerías utilizadas para acceder a funcionalidades de los modelos usados: \textbf{openAi} \cite{APIOpenApi} y \textbf{hugginsface\_hub} \cite{HuggingFace}.
+    \item \textbf{Transformers} \cite{Transformers} es una librería que proporciona APIs para descargar y entrenar fácilmente modelos preentrenados de última generación, y la librería \textbf{datasets} [REF] para la carga y manipulación de datos.
+    \item Como herramienta para realizar entrenamiento en el modelo usamos la librería \textbf{tlr} \cite{Tlr} y \textbf{torch} \cite{Torch}, que forma parte de la biblioteca PyTorch. Es un framework de aprendizaje profundo que facilita tanto la construcción como el entrenamiento de modelos.
+    \item La librería \textbf{peft} \cite{Peft} está diseñada para la adaptación eficiente de modelos preentrenados a aplicaciones específicas sin necesidad de ajustar todos los parámetros del modelo.
+    \item Para el apartado de métricas hemos usado las librerías \textbf{nltk} \cite{Nltk}y \textbf{sklearn.metrics} \cite{SklearnMetrics}.
+    \item Para visualizar el entrenamiento de modelos de aprendizaje automático, hemos empleado \textbf{TensorBoard} \cite{TensorBoard} integrada en TensorFlow.
+    \item Para la realización de la memoria se usó \textbf{Overleaf} \cite{Overleaf}, una herramienta en línea para la edición de documentos en LaTeX.
+    \item Finalmente, hemos utilizado \textbf{GitHub} como repositorio para alojar el conjunto de archivos que componen el TFG. El proyecto está disponible en el siguiente \href{https://github.com/abel-gonzalez/TFG.git}{enlace}.
+
+
+
+
+\end{itemize}
